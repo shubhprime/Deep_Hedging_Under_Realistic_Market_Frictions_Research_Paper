@@ -5,17 +5,23 @@ env/
 
 # Python cache files
 __pycache__/
+code/__pycache__/
 *.pyc
 
 # Raw downloaded data - too large, and recreatable via the download scripts
 raw_downloads/
 
-# Large intermediate CSVs - too large for git, recreatable by rerunning the notebooks
+# Large intermediate CSVs (input data) - too large for git, recreatable by rerunning the notebooks
 btc_options_hourly_master.csv
 btc_options_cleaned.csv
 btc_options_train.csv
 btc_options_val.csv
 btc_options_test.csv
+
+# Intermediate results CSVs - kept locally, only the final merged table is tracked
+results/test_results.csv
+results/test_results_with_deep_hedge.csv
+results/test_results_all_strategies.csv
 
 # Model checkpoints and tensor caches - large binary files
 *.pt
@@ -23,6 +29,7 @@ btc_options_test.csv
 
 # Jupyter checkpoint files
 .ipynb_checkpoints/
+code/.ipynb_checkpoints/
 
 # OS junk files
 .DS_Store
