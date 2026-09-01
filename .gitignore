@@ -1,0 +1,33 @@
+# Python virtual environment - never commit this
+venv/
+.venv/
+env/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Raw downloaded data - too large, and recreatable via the download scripts
+raw_downloads/
+
+# Large intermediate CSVs - too large for git, recreatable by rerunning the notebooks
+btc_options_hourly_master.csv
+btc_options_cleaned.csv
+btc_options_train.csv
+btc_options_val.csv
+btc_options_test.csv
+
+# Model checkpoints and tensor caches - large binary files
+*.pt
+*.npz
+
+# Jupyter checkpoint files
+.ipynb_checkpoints/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Paper drafts - keep only the final PDF, exclude the arXiv source archive and other draft
+paper/deep_hedging_paper_arxiv_so*
+paper/deep_hedging_paper_Research*
